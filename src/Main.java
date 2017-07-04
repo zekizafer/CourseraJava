@@ -1,12 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello World! " + new Main().multiplicate(5,6));
-    }
+        System.out.println("Hello World!");
 
-    private String multiplicate(int a, int b){
-        int result = a*b;
-        int random = 4534626;
-        String name = "Zeki Zafer";
-        return "Why you so mad?";
+        Person zeki = new Person();
+        zeki.setAge(17);
+        System.out.println(zeki.getAge());
+        zeki.setSize(2);
+        zeki.setWeight(80);
+
+        zeki.scream("I am screaming right now");
+        zeki.laugh();
     }
 }
